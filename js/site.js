@@ -1,8 +1,6 @@
 $('.level-toggle').click(function() {
   $('.level-content').slideUp(200);
-  $(this).closest('.level').find('.level-content').slideToggle(200, function() {
-    $(window).trigger('resize');
-  });
+  $(this).closest('.level').find('.level-content').slideToggle(200);
 });
 
 $('map').imageMapResize();
@@ -15,6 +13,7 @@ $('area').on('click', function() {
     $('#level1-popup-store').fadeIn(300);
   } else if (name === "cafe") {
     $('#level1-popup-cafe').fadeIn(300);
+    $(window).trigger('resize');
   }
 });
 
