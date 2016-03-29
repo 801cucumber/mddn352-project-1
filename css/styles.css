@@ -7,6 +7,7 @@
 
 #logo {
   height: 30px;
+  max-width: 100%;
   margin: 10px 0;
 }
 
