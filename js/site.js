@@ -4,3 +4,19 @@ $('.level-toggle').click(function() {
 });
 
 $('map').imageMapResize();
+
+$('area').on('click', function() {
+  var name = $(this).attr('name');
+
+  $('#overlay').fadeIn(300);
+  if (name === "store") {
+    $('#level1-popup-store').fadeIn(300);
+  } else if (name === "cafe") {
+    $('#level1-popup-cafe').fadeIn(300);
+  }
+});
+
+$('#overlay').click(function() {
+  $('.popup').fadeOut(300);
+  $('#overlay').fadeOut(300);
+});

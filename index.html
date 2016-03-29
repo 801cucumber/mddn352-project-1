@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-  <title>MDDN352 Project 1</title>
+  <title>Te Papa Interactive Map</title>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
   <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
@@ -94,13 +94,23 @@
         <center><br>
           <img id="level1-map" src="images/level_1_map.jpg" border="0" width="70%" orgWidth="708" orgHeight="722" usemap="#level1-map"/>
           <map name="level1-map" id="level1">
-          	<area shape="rect" name="cafe" coords="1003,884,1053,934" href="https://www.tepapa.govt.nz/"/>
-          	<area shape="rect" name="store" coords="932,1009,982,1059" href="#"/>
+          	<area shape="rect" name="cafe" coords="1003,884,1053,934" href="#cafe" alt="cafe"/>
+          	<area shape="rect" name="store" coords="932,1009,982,1059" href="#store" alt="store"/>
           </map>
         </center>
       </div>
     </div>
   </div>
+
+  <div id="overlay"></div>
+  <div id="level1-popup-store" class="popup">
+    Buy stuff from Te Papa store pls we need money
+  </div>
+  <div id="level1-popup-cafe" class="popup">
+    Buy stuff from Te Papa cafe pls we sell delicious goods mm yum yum sweet peas
+  </div>
+
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script src="js/imageMapResizer.min.js"></script>
