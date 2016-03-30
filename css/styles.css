@@ -19,7 +19,7 @@
 
 .level-toggle {
   width: 100%;
-  background: rgb(222, 142, 21);
+  background: #ce9b21;
   color: white;
   font-family: open sans, sans-serif;
   font-size: 32px;
@@ -56,11 +56,18 @@ h1 {
   font-family: open sans, sans-serif;
 }
 
+h3 {
+  font-size: 25px;
+  font-family: open sans, sans-serif;
+  margin-top: 0;
+}
+
 .popup {
   width: 600px;
-  height: 400px;
+  height: auto;
+  max-width: 100%;
   background: white;
-  padding: 10px;
+  padding: 15px;
   font-family: open sans, sans-serif;
   border-radius: 10px;
   box-shadow: 10px 10px 10px #888888;
@@ -68,6 +75,10 @@ h1 {
   top: 50%; left: 50%;
   display: none;
   transform: translate(-50%, -50%);
+}
+
+.popup img {
+  max-width: 100%;
 }
 
 #overlay {
