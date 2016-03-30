@@ -15,6 +15,9 @@ $('area').on('click', function() {
   } else if (name === "cafe") {
     $('#level1-popup-cafe').fadeIn(300);
     $(window).trigger('resize');
+  } else if (name === "quake") {
+    $('#level1-popup-quake').fadeIn(300);
+    $(window).trigger('resize');
   }
 });
 
